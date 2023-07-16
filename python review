@@ -1,0 +1,17 @@
+def create_youtube_video(title, description):
+	yt_vid= {"title":title, "description":description, "likes":0, "dislikes":0, "comments":{"username":"text"}}
+	return (yt_vid)
+
+def like(yt_vid):
+	if "likes" in yt_vid:
+		yt_vid["likes"]= yt_vid["likes"+1]
+	return (yt_vid)
+
+def dislike(yt_vid):
+	if "dislikes" in yt_vid:
+		yt_vid["dislikes"]= yt_vid["dislikes"+1]
+	return (yt_vid)
+
+def add_comment():
+	username= input("what username would you want to have?")
+	comment_text= input("comment on the post!")
